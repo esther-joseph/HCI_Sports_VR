@@ -2,6 +2,8 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
+    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.2.0f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,6 +55,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Editor\SkyboxPanoramicShader-master\SkyboxPanoramicBetaShaderGUI.cs" />
+     <Compile Include="Assets\GazeClick\Editor\CheckForReferences.cs" />
+     <Compile Include="Assets\GazeClick\Editor\CheckForVersion.cs" />
+     <Compile Include="Assets\GazeClick\Editor\GazeClickEditor.cs" />
+     <Compile Include="Assets\GazeClick\Editor\GazeClickWarning.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Editor\DemoInputManagerEditor.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Editor\PermissionsDemoBuildProcessor.cs" />
      <Compile Include="Assets\GoogleVR\Editor\Controller\GvrControllerVisualEditor.cs" />
@@ -66,6 +73,10 @@
      <Compile Include="Assets\GoogleVR\Editor\GvrEditorSettings.cs" />
      <Compile Include="Assets\GoogleVR\Editor\GvrHeadsetEditor.cs" />
      <Compile Include="Assets\GoogleVR\Editor\InstantPreviewEditor.cs" />
+     <None Include="Assets\GazeClick\Editor\Version1.3.txt" />
+     <None Include="Assets\GazeClick\Editor\Version1.4.txt" />
+     <None Include="Assets\Editor\SkyboxPanoramicShader-master\Skybox-PanoramicBeta.shader" />
+     <None Include="Assets\GazeClick\Editor\Orig.txt" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>C:/Users/Esther Joseph/Documents/Unity/CactusGalaxy/HCI_Sports_XP/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>

@@ -2,6 +2,8 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
+    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.2.0f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,6 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FindPlayer.cs" />
+     <Compile Include="Assets\GazeClick\Implementation\GazeClick.cs" />
      <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoObjectController6DoF.cs" />
      <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoSeeThroughController.cs" />
      <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBetaControllerInput.cs" />
@@ -177,22 +181,36 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\GvrCursorHelper.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\SuppressMemoryAllocationErrorAttribute.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+     <Compile Include="Assets\Scenes\Scripts\MenuScript.cs" />
      <Compile Include="Assets\SceneTransition.cs" />
+     <None Include="Assets\GazeClick\Implementation\FillRing.shader" />
+     <None Include="Assets\GazeClick\Implementation\Version1.5.txt" />
+     <None Include="Assets\GazeClick\Implementation\Version1.4.txt" />
+     <None Include="Assets\GazeClick\Implementation\Orig.txt" />
+     <None Include="Assets\GazeClick\Implementation\Version1.1.txt" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
+     <None Include="Assets\GazeClick\Implementation\Version1.3.txt" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
+     <None Include="Assets\GazeClick\Implementation\Version1.0.txt" />
+     <None Include="Assets\Scenes\FlipNormal\FlipNormalsShader.shader" />
+     <None Include="Assets\GazeClick\Instructions.txt" />
      <None Include="Assets\GoogleVR\Shaders\GvrController.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
      <None Include="Assets\GoogleVR\Beta\Shaders\GvrSeeThroughUI.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
      <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-6DOF.xml" />
+     <None Include="Assets\8K Skybox Pack Free\ReadMe.txt" />
      <None Include="Assets\GoogleVR\Shaders\Video\VideoUnlitShader.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrControllerReticle.shader" />
+     <None Include="Assets\GazeClick\Advanced Instructions.txt" />
      <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Daydream.xml" />
      <None Include="Assets\GoogleVR\Demos\Shaders\HelloVR\HelloVRUnlitGrayscaleToColor.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrReticleShader.shader" />
+     <None Include="Assets\GazeClick\Implementation\Version1.7.txt" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlay.shader" />
      <None Include="Assets\GoogleVR\Plugins\Android\proguard-gvr.txt" />
+     <None Include="Assets\GazeClick\Implementation\Version1.2.txt" />
      <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Cardboard.xml" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Esther Joseph/Documents/Unity/CactusGalaxy/HCI_Sports_XP/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
